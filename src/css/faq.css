@@ -1,0 +1,117 @@
+.faq h1 {
+  color: rgba(250, 250, 250, 0.4);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -2%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.faq ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: relative;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* Располагаем линию посередине списка */
+  transform: translateX(-50%); /* Центрируем линию относительно ее ширины */
+  width: 2px; /* Ширина линии */
+
+  background-color: rgba(250, 250, 250, 0.2); /* Цвет линии */
+}
+
+.faq li {
+  width: calc(50% - 20px);
+  margin-bottom: 20px; /* Добавление отступа между элементами */
+  position: relative;
+}
+
+.faq li::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Расположение полосы под элементом */
+  left: 0;
+  width: calc(100% + 20px); /* Увеличиваем ширину на величину отступа */
+  height: 1px; /* Высота полосы */
+  background-color: rgba(250, 250, 250, 0.2); /* Цвет полосы */
+}
+
+.faq li:nth-child(2n)::after {
+  width: calc(100% + 20px); /* Ширина полосы для второго элемента */
+  left: -20px; /* Сдвиг влево для второго элемента */
+}
+
+.faq li:nth-child(2n):last-child::after {
+  display: none; /* Скрыть полосу у последнего элемента в левом ряду */
+}
+
+.faq li:nth-last-child(-n + 2)::after {
+  display: none;
+}
+.faq h3 {
+  /* Desktop_tablet/H5 */
+  color: rgb(250, 250, 250);
+  font-family: Inter Tight;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -2%;
+  text-align: left;
+  margin-bottom: 26px;
+  margin-top: 32px;
+  max-width: 574px;
+}
+
+.faq p {
+  /* Desktop_tablet/Main text */
+  color: rgba(250, 250, 250, 0.6);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -2%;
+  text-align: left;
+}
+
+.faq use {
+  fill: #fff;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.faq-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  background-color: rgb(28, 29, 32);
+}
+
+.faq svg {
+  margin: 0 auto;
+}
+
+.is-hidden {
+  display: none;
+}
