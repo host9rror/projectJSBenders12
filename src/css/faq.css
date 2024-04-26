@@ -101,8 +101,19 @@
   display: none;
 }
 
+.ac-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background-color: unset;
+  border: none;
+  padding-left: 0px;
+  text-align: start;
+}
+
 @media screen and (min-width: 1280px) {
-  .faq h3 {
+  .ac-trigger {
     color: rgb(250, 250, 250);
     font-size: 20px;
     font-weight: 600;
@@ -110,7 +121,6 @@
     margin-top: 32px;
     max-width: calc(100% - 40px);
     padding-right: 60px;
-    text-align: start;
   }
 }
 
@@ -179,14 +189,4 @@
 
 .is-hidden {
   display: none;
-}
-
-.ac-trigger {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  background-color: unset;
-  border: none;
-  padding-left: 0px;
 }
