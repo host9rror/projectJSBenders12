@@ -1,0 +1,122 @@
+/* =========== MOBILE STYLE =========== */
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-left: 0px;
+}
+
+.benefits-list-item {
+    border-radius: 20px;
+    padding: 24px 24px 29px 24px;
+    background-color: #242527;
+}
+
+.benefits-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #fafafa;
+    opacity: 40%;
+    margin-bottom: 32px;
+}
+
+.benefits-title-item {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.benefits-icons-container {
+    border-radius: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: #ED3B44;
+    margin-bottom: 64px;
+}
+
+.benefits-icons {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    fill: none;
+    stroke: #fafafa;
+}
+
+.benefits-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    opacity: 60%;
+}
+
+.benefits-btn {
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+width: 187px;
+text-decoration: none;
+padding-bottom: 18px;
+padding-top: 18px;
+margin-top: 32px;
+display: block;
+text-align: center;
+font-size: 16px;
+}
+
+/* =========== / MOBILE STYLE =========== */
+
+/* =========== TABLET STYLE =========== */
+
+@media screen and (min-width: 768px) {
+
+.benefits-list {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.benefits-btn {
+margin-top: 64px;
+}
+}
+
+/* =========== / TABLET STYLE =========== */
+
+/* =========== DESKTOP STYLE =========== */
+
+@media screen and (min-width: 1280px) and (max-width: 1439px){
+
+.container {
+max-width: 768px;
+padding: 0 32px;
+}
+
+.section {
+padding: 48px 0;
+}
+}
+
+@media screen and (min-width: 1440px) {
+
+.benefits-title {
+position: absolute;
+margin-bottom: 0;
+}
+
+.benefits-box {
+position: relative;
+left: 50%;
+max-width: 680px;
+}
+
+.benefits-list {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+}

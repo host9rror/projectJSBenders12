@@ -1,0 +1,72 @@
+.visually-hidden {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.covers {
+  backdrop-filter: blur(30px);
+  background: rgba(217, 217, 217, 0.04);
+  height: 100px;
+}
+.covers-background {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.cover-item {
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 8);
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.covers-image {
+  width: 282px;
+  height: 162px;
+  background: url('path_to_image');
+  transform: rotate(-16deg);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cover-image {
+    width: 544px;
+    height: 314px;
+  }
+}
