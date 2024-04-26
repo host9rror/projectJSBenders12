@@ -58,16 +58,16 @@
 }
 
 .benefits-btn {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    width: 187px;
-    text-decoration: none;
-    padding-bottom: 18px;
-    padding-top: 18px;
-    margin-top: 32px;
-    display: block;
-    text-align: center;
-    font-size: 16px;
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+width: 187px;
+text-decoration: none;
+padding-bottom: 18px;
+padding-top: 18px;
+margin-top: 32px;
+display: block;
+text-align: center;
+font-size: 16px;
 }
 
 /* =========== / MOBILE STYLE =========== */
