@@ -22,6 +22,8 @@
   backdrop-filter: blur(30px);
   background: rgba(217, 217, 217, 0.04);
   height: 100px;
+  overflow: hidden;
+  height: 508px;
 }
 .covers-background {
   position: absolute;
@@ -33,14 +35,18 @@
   font-size: 34px;
   text-transform: uppercase;
 }
-
+.covers-projects {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 .cover-item {
   flex-shrink: 0;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 8);
   white-space: nowrap;
   animation-name: marqueeLine;
   animation-duration: 5s;
@@ -49,9 +55,7 @@
 }
 .covers-image {
   width: 282px;
-  height: 162px;
-  background: url('path_to_image');
-  transform: rotate(-16deg);
+  transform: rotate(16deg);
 }
 
 @keyframes marqueeLine {
@@ -67,6 +71,8 @@
 @media screen and (min-width: 768px) {
   .cover-image {
     width: 544px;
-    height: 314px;
+  }
+  .cover {
+    height: 960px;
   }
 }
