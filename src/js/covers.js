@@ -1,7 +1,11 @@
 const coversProjects = document.querySelector('.covers-projects')
 const covers =
+<<<<<<< Updated upstream
     [{
         mobile:'../img/covers/project-1.png', desktop:'../img/covers/project-1@2x.png',description:'project 1'},
+=======
+    [{mobile:'../img/covers/project-1.png', desktop:'../img/covers/project-1@2x.png',description:'project 1'},
+>>>>>>> Stashed changes
         {mobile:'../img/covers/project-2.png', desktop:'../img/covers/project-2@2x.png',description:'project 2'},
         {mobile:'../img/covers/project-3.png', desktop:'../img/covers/project-3@2x.png',description:'project 3'},
       { mobile:'../img/covers/project-4.png', desktop:'../img/covers/project-4@2x.png',description:'project 4'},
@@ -10,8 +14,12 @@ const covers =
         {mobile:'../img/covers/project-8.png', desktop:'../img/covers/project-8@2x.png',description:'project 8'},
         {mobile:'../img/covers/project-9.png', desktop:'../img/covers/project-9@2x.png',description:'project 9'},
         {mobile:'../img/covers/project-10.png', desktop:'../img/covers/project-10@2x.png',description:'project 10'},
+<<<<<<< Updated upstream
         {mobile:'../img/covers/project-11.png', desktop:'../img/covers/project-11@2x.png',description:'project 11'},
         ]
+=======
+        {mobile:'../img/covers/project-11.png', desktop:'../img/covers/project-11@2x.png',description:'project 11'},]
+>>>>>>> Stashed changes
 console.log(covers);
 function coversItems(arr) {
     return arr.map(({mobile, desktop, description}) =>
