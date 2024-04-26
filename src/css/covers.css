@@ -30,16 +30,17 @@
   right: -800px;
   left: 0;
   overflow: hidden;
-  font-family: 'Pridi', sans-serif;
   font-weight: 600;
   font-size: 34px;
   text-transform: uppercase;
 }
-.covers-projects {
+.covers-projects,
+.covers-projects1 {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  height: 100vh;
+  transform: rotate(16deg);
 }
 .cover-item {
   flex-shrink: 0;
@@ -48,17 +49,16 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  animation-name: marqueeLine;
+  /* animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 .covers-image {
   width: 282px;
-  transform: rotate(16deg);
 }
 
-@keyframes marqueeLine {
+/* @keyframes marqueeLine {
   from {
     transform: translateX(-20%);
   }
@@ -66,7 +66,7 @@
   to {
     transform: translateX(-180%);
   }
-}
+} */
 
 @media screen and (min-width: 768px) {
   .cover-image {
