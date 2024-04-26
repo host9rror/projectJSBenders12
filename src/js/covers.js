@@ -1,5 +1,5 @@
 const coversProjects = document.querySelector('.covers-projects')
-const coversProjects1 = document.querySelector('.covers-projects1')
+
 const covers =
     [{
         mobile:'../img/covers/project-1.png', desktop:'../img/covers/project-1@2x.png',description:'project 1'},
@@ -24,5 +24,4 @@ function coversItems(arr) {
     ).join('')
 }
 coversProjects.innerHTML = coversItems(covers);
-coversProjects1.innerHTML = coversItems(covers);
 
