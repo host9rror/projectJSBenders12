@@ -1,47 +1,66 @@
 @media screen and (min-width: 375px) {
 .project {
-    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
 }
 
     .project-title {
-    color: rgba(250, 250, 250, 0.4) ;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 32px;
     }
 
     .project-content {
-        background-color: rgba(250, 250, 250, 1);
         display: flex;
         flex-wrap: wrap;
-        
         align-items:flex-start;
         border-radius: 24px;
+        
+    }
+    
+    .project-main-part{
+        background-color: rgba(250, 250, 250, 1);
         width: 100%;
-        height: 812px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 32px;
+        padding: 32px 32px;
+        border-radius: 24px 24px 0 0;
+
     }
 
     .project-list {
         display: flex;
         flex-wrap: wrap;
         gap: 6px;
+        /* padding-top: 32px; */
     }
 
     .project-list-item {
     border: 1px solid rgba(28, 29, 32, 0.2);
     border-radius: 60px;
     color:rgba(28, 29, 32, 1) ;
+    padding: 13px 18px;
+    font-weight: 500;
     }
 
     .project-content-title {
         color: rgba(28, 29, 32, 1);
+        font-size: 24px;
+        font-weight: 500;
 
     }
 
     .project-conent-btn {
+        border: none;
         border-radius: 60px;
         background-color: rgba(237, 59, 68, 1);
         color: rgba(250, 250, 250, 1);
+        font-size: 16px;
+        font-weight: 500;
+        padding: 13px 32px;
         
 
     }
@@ -51,16 +70,39 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        border-radius: 0 0 24px 24px;
     }
 
     .project-box-image {
-        width: 311px;
-        height: 195px;
+        width: 100%;
+        height: auto;
+        padding: 32px 16px;
+
     }
 
-    .project-arrow-rigth {}
+    .project-arrow{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .project-arrow-btn {
+        border: 1px solid rgba(250, 250, 250, 0.4);
+        border-radius: 60px;
+        background-color: transparent;
+        width: 52px;
+        height: 52px;
+        /* padding: 14px 14px; */
+    }
 
-    .arrow-left {}
+    .arrow-left {
+        transform: rotate(180deg);
+        width: 24px;
+        height: 24px;
+    }
 
-    .arrow-rigth {}
+    .arrow-rigth {
+        width: 24px;
+        height: 24px;
+    }
 }
