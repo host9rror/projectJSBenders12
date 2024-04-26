@@ -2,11 +2,11 @@ import Swiper from "swiper";
 
 const Base_URL = 'https://portfolio-js.b.goit.study/api';
 
-const BtnNext = document.querySelector('.swiper-btn-next');
-const BtnPrev = document.querySelector('.swiper-btn-prev');
+const BtnNext = document.querySelector('.btn-arrow-right');
+const BtnPrev = document.querySelector('.btn-arrow-left');
 
 
-const swiper = new Swiper('.reviews-swiper-container', {
+const swiper = new Swiper('.reviews-button', {
     direction: 'horizontal',
     keyboard: {
         enabled: true,
@@ -17,6 +17,13 @@ const swiper = new Swiper('.reviews-swiper-container', {
         prevEl: BtnPrev,
     },
 });
+
+BtnNext.addEventListener ('click', function () {
+    swiper.slideNext();
+})
+BtnPrev.addEventListener('click', function () {
+    swiper.slidePrev();
+})
 
 async function getReviews() {
     try {
