@@ -19,39 +19,43 @@
 }
 
 .covers {
+  height: 508px;
+  overflow: hidden;
+  padding: 0;
   backdrop-filter: blur(30px);
   background: rgba(217, 217, 217, 0.04);
-  height: 100px;
+  background-image: url(../img/covers/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.covers-background {
-  position: absolute;
-  right: -800px;
-  left: 0;
-  overflow: hidden;
-  font-family: 'Pridi', sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
+@media (min-resolution: 192dpi) {
+  .covers {
+    background-image: url(../img/covers/background@2x.png);
+  }
 }
 
+.covers-projects {
+  list-style: none;
+}
 .cover-item {
   flex-shrink: 0;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 8);
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
 .covers-image {
-  width: 282px;
+  display: block;
+  width: auto;
   height: 162px;
-  background: url('path_to_image');
-  transform: rotate(-16deg);
+  object-fit: cover;
 }
 
 @keyframes marqueeLine {
@@ -63,10 +67,26 @@
     transform: translateX(-180%);
   }
 }
-
 @media screen and (min-width: 768px) {
-  .cover-image {
-    width: 544px;
+  .covers-image {
     height: 314px;
   }
+  .covers {
+    height: 960px;
+  }
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  left: -10%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  rotate: 16deg;
+}
+.covers-rows {
+  position: absolute;
+  top: -15%;
 }
