@@ -1,0 +1,162 @@
+.reviews-section {
+}
+
+/* REVIEWS CONTAINER */
+.container.reviews {
+  /* Mobile */
+  max-width: 375px;
+}
+@media screen and (min-width: 768px) {
+  .container.reviews {
+    /* Tablet */
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container.reviews {
+    /* Desktop */
+    max-width: 1376px;
+
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* REVIEWS TITLE */
+.reviews-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.4);
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.swiper-container {
+}
+.swiper-wrapper {
+}
+
+/* REVIEWS LIST (UL) */
+.reviews-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile */
+.reviews-list {
+  /* width: 343px; */
+  width: 100%;
+}
+
+/* REVIEWS SWIPER-SLIDE (LI) */
+.swiper-slide {
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .swiper-slide {
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .swiper-wrapper > .swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+    position: relative;
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .swiper-slide {
+  }
+}
+/* Mobile */
+@media screen and (min-width: 320px) {
+  .reviews-card {
+    width: 343px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    padding: 32px 24px;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .reviews-card {
+  }
+}
+/* Desktop */
+@media screen and (min-width: 1158px) {
+  .reviews-card {
+    width: 332px;
+    float: left;
+  }
+}
+
+.photo {
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.div-reviews-info {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+.reviews-person-name {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+.reviews-person-info {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.6);
+  margin-bottom: 20px;
+}
+/* /* BUTTON */
+.reviews-button {
+  display: block;
+}
+.reviews-btn-list {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.btn-arrow-left,
+.btn-arrow-right {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: #242424;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-arrow-left {
+  transform: rotate(-180deg);
+  margin-right: 12px;
+}
+.arrow-left-icon {
+}
+
+.arrow-right-icon {
+}
