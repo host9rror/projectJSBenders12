@@ -113,21 +113,18 @@
 }
 
 .div-reviews-info {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
   display: flex;
   flex-direction: column;
 }
 .reviews-person-name {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #fafafa;
   margin-bottom: 8px;
 }
 .reviews-person-info {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
   margin-bottom: 20px;
