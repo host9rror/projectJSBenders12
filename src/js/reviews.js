@@ -2,19 +2,19 @@ import Swiper from "swiper";
 
 const Base_URL = 'https://portfolio-js.b.goit.study/api';
 
-const BtnNext = document.querySelector('.btn-arrow-right');
-const BtnPrev = document.querySelector('.btn-arrow-left');
+document.addEventListener('DOMContentLoaded', () => {
+    const BtnNext = document.querySelector('.btn-arrow-right');
+    const BtnPrev = document.querySelector('.btn-arrow-left');
 
-
-const swiper = new Swiper('.reviews-button', {
+    let swiper = new Swiper('.reviews-swiper-container.swiper-container', {
     direction: 'horizontal',
     keyboard: {
         enabled: true,
         onlyInViewport: true,
     },
     navigation: {
-        nextEl: BtnNext,
-        prevEl: BtnPrev,
+        nextEl: '.btn-arrow-right',
+        prevEl: '.btn-arrow-left',
     },
 });
 
@@ -24,6 +24,7 @@ BtnNext.addEventListener ('click', function () {
 BtnPrev.addEventListener('click', function () {
     swiper.slidePrev();
 })
+
 
 async function getReviews() {
     try {
@@ -39,6 +40,7 @@ async function getReviews() {
     }
 }
 
+
 function renderReviews(reviews) {
     const reviewsList = reviews.map(review =>
         `<div class="review">
@@ -53,4 +55,5 @@ function renderReviews(reviews) {
     document.querySelector('.swiper-wrapper').innerHTML = reviewsList;
 }
 
-document.addEventListener('DOMContentLoaded', getReviews);
+getReviews();
+});
