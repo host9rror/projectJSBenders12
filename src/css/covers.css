@@ -45,10 +45,10 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  /* animation-name: marqueeLine;
+  animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
 
 .covers-image {
@@ -78,7 +78,6 @@
 
 .row {
   position: relative;
-
   width: 100%;
   left: -20%;
   margin-bottom: 30px;
@@ -86,4 +85,8 @@
   flex-direction: row;
   gap: 20px;
   rotate: 16deg;
+}
+.covers-rows {
+  position: absolute;
+  top: -15%;
 }

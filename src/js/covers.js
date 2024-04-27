@@ -1,10 +1,6 @@
-
-
-
-
 const coversProjects = document.querySelector('.covers-projects');
 const rows = document.querySelectorAll('.row');
-
+// Array
 const covers =
     [{
         mobile:'../img/covers/project-1.png', desktop:'../img/covers/project-1@2x.png',description:'project 1'},
@@ -18,10 +14,10 @@ const covers =
         {mobile:'../img/covers/project-10.png', desktop:'../img/covers/project-10@2x.png',description:'project 10'},
         {mobile:'../img/covers/project-11.png', desktop:'../img/covers/project-11@2x.png',description:'project 11'},
   ]
-
+// Adding covers
      function coversItems(arr) {
   return arr.map(({ mobile, desktop, description }) =>
-    `<li class="cover-item swiper-slide">
+    `<li class="cover-item animate">
           <a class="covers-link" href="" data-desktop="${desktop}">
             <img class="covers-image" src="${mobile}" alt="${description}" width="" />
           </a>
@@ -30,15 +26,11 @@ const covers =
 };
 
 
-
-
 covers.forEach((cover, index) => {
 const row = rows[Math.floor(index / 3)]; 
 const imageHtml = coversItems([cover]);
 row.innerHTML += imageHtml;
 });
-
-
 
 coversProjects.innerHTML = coversItems(covers);
 const images = document.querySelectorAll('.covers-image');
@@ -55,4 +47,42 @@ images.forEach(image => {
     image.setAttribute ('src', desktop)
   }
 });
+
+const coversSection = document.querySelector('.covers-section');
+
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+
+function startAnimation() {
+  coversSection.classList.add('animate');
+  
+}
+
+
+function stopAnimation() {
+  coversSection.classList.remove('animate');
+ 
+}
+
+
+window.addEventListener('scroll', function() {
+  if (isInViewport(coversSection)) {
+    startAnimation();
+  } else {
+    stopAnimation();
+  }
+});
+
+if (isInViewport(coversSection)) {
+  startAnimation();
+}
+
 
