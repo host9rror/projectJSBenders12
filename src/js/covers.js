@@ -1,3 +1,9 @@
+import Swiper from 'swiper';
+// import Swiper styles
+import 'swiper/css/bundle';
+
+const swiper = new Swiper();
+
 const coversProjects = document.querySelector('.covers-projects')
 
 const covers =
@@ -15,13 +21,24 @@ const covers =
         ]
 console.log(covers);
 function coversItems(arr) {
-    return arr.map(({mobile, desktop, description}) =>
-         `<li class="cover-item">
-          <a class="covers-link" href="${mobile}" data-desktop="${desktop}">
+  return arr.map(({ mobile, desktop, description }) =>
+    `<li class="cover-item">
+          <a class="covers-link" href="" data-desktop="${desktop}">
             <img class="covers-image" src="${mobile}" alt="${description}" width="" />
           </a>
         </li>`
-    ).join('')
+  ).join('');
+
 }
 coversProjects.innerHTML = coversItems(covers);
+const images = coversProjects.querySelector('.covers-image');
+  const screenWidth = window.innerWidth;
+image.forEach(image => {
+  if (screenWidth < 768) {
+    image.style.width = `${mobile}`;
+
+  } else {
+    image.style.width = `${desktop}`;
+  }
+});
 
