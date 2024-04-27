@@ -46,7 +46,7 @@
   justify-content: center;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
