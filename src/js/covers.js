@@ -1,10 +1,9 @@
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css/bundle';
 
-const swiper = new Swiper();
 
-const coversProjects = document.querySelector('.covers-projects')
+
+
+const coversProjects = document.querySelector('.covers-projects');
+const rows = document.querySelectorAll('.row');
 
 const covers =
     [{
@@ -18,27 +17,42 @@ const covers =
         {mobile:'../img/covers/project-9.png', desktop:'../img/covers/project-9@2x.png',description:'project 9'},
         {mobile:'../img/covers/project-10.png', desktop:'../img/covers/project-10@2x.png',description:'project 10'},
         {mobile:'../img/covers/project-11.png', desktop:'../img/covers/project-11@2x.png',description:'project 11'},
-        ]
-console.log(covers);
-function coversItems(arr) {
+  ]
+
+     function coversItems(arr) {
   return arr.map(({ mobile, desktop, description }) =>
-    `<li class="cover-item">
+    `<li class="cover-item swiper-slide">
           <a class="covers-link" href="" data-desktop="${desktop}">
             <img class="covers-image" src="${mobile}" alt="${description}" width="" />
           </a>
         </li>`
   ).join('');
+};
 
-}
+
+
+
+covers.forEach((cover, index) => {
+const row = rows[Math.floor(index / 3)]; 
+const imageHtml = coversItems([cover]);
+row.innerHTML += imageHtml;
+});
+
+
+
 coversProjects.innerHTML = coversItems(covers);
-const images = coversProjects.querySelector('.covers-image');
+const images = document.querySelectorAll('.covers-image');
   const screenWidth = window.innerWidth;
-image.forEach(image => {
+images.forEach(image => {
+  const desktop = image.parentElement.getAttribute('data-desktop');
+    const mobile = image.getAttribute('src');
   if (screenWidth < 768) {
-    image.style.width = `${mobile}`;
+    image.style.width = `100%`;
+    image.setAttribute('src', mobile)
 
   } else {
-    image.style.width = `${desktop}`;
+    image.style.width = `100%`;
+    image.setAttribute ('src', desktop)
   }
 });
 
