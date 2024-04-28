@@ -1,0 +1,142 @@
+.wrapper-about-title {
+  padding: 32px;
+  padding-bottom: 0;
+  border-radius: 24px;
+  min-height: 500px;
+  background-color: #242527;
+  margin-bottom: 16px;
+}
+
+.about h3 {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+
+.title-red {
+  color: #ed3b44;
+}
+.title-light-brown {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.wrapper-about-img {
+  min-height: 500px;
+  margin-bottom: 32px;
+}
+
+.experience {
+}
+
+.experience-list {
+}
+
+.experience-item {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 20px;
+}
+
+.experience-item.role,
+.experience-item.education {
+  padding-top: 20px;
+}
+
+.experience-item.role p,
+.experience-item.education p {
+  margin-bottom: 10px;
+}
+
+.experience-item.role p:last-child,
+.experience-item.education p:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper-item-top {
+  display: flex;
+  justify-content: space-between;
+  min-height: 48px;
+}
+
+.experience h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.button-experience {
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-arrow:nth-child(1){
+    transform: rotate(180deg);
+}
+
+
+.about-me-desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 32px;
+}
+
+.skills {
+  position: relative;
+  padding-top: 32px;
+}
+
+.wrapper-skills-list {
+  width: 260px;
+  overflow: hidden;
+}
+
+.skills-list {
+  display: inline-flex;
+}
+
+.skills-item {
+  height: 130px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+
+  font-weight: 500;
+
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.skills-item:first-child {
+  background-color: #ed3b44;
+}
+
+.hiden {
+  display: none;
+}
+
+.button-skills-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 0;
+  background-color: transparent;
+}
