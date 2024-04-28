@@ -12,10 +12,10 @@
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .container.reviews {
     /* Desktop */
-    max-width: 1376px;
+    max-width: 1440px;
 
     margin-left: 16px;
     margin-right: 16px;
@@ -71,8 +71,13 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .swiper-slide {
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-item {
+    width: calc((100% - 16px * 3) / 4);
   }
 }
 /* Mobile */
@@ -95,7 +100,7 @@
   }
 }
 /* Desktop */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .reviews-card {
     width: 332px;
     float: left;
@@ -108,21 +113,18 @@
 }
 
 .div-reviews-info {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
   display: flex;
   flex-direction: column;
 }
 .reviews-person-name {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: #fafafa;
   margin-bottom: 8px;
 }
 .reviews-person-info {
-  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
   margin-bottom: 20px;
@@ -156,7 +158,9 @@
   margin-right: 12px;
 }
 .arrow-left-icon {
+  stroke: #fafafa;
 }
 
 .arrow-right-icon {
+  stroke: #fafafa;
 }
