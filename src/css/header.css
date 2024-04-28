@@ -12,7 +12,6 @@
 
 .header-navigation {
     display: flex;
-
 }
 
 .header-logo {
@@ -149,9 +148,7 @@
     stroke: #fff;
 }
 
-.header-menu_visible {
-    display: flex;
-}
+
 
 @media screen and (min-width: 768px) {
     .menu-open_btn {
@@ -188,11 +185,11 @@
     }
 
     .header-menu {
-        display: fnonelex;
+        display: none;
         flex-direction: column;
         align-items: center;
         position: absolute;
-        left: 53%;
+        left: 50%;
         top: 45px;
         transform: translateX(-50%);
     }
@@ -209,4 +206,11 @@
         letter-spacing: -0.02em;
         color: #fafafa;
     }
+}
+
+
+
+
+.header-menu_visible {
+    display: flex;
 }
