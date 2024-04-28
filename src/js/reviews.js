@@ -50,7 +50,7 @@ async function renderReviews(reviews) {
     const reviewsList = reviews.map(review =>
         `<div class="reviews-card">
         <li class="swiper-slide">
-        <img src="${Base_URL}/${review.avatar_url}" alt="${review.author}">
+        <img src="${review.avatar_url}" alt="${review.author}">
         <h3>${review.author}</h3>
         <p>${review.review}</p>
         </li>
