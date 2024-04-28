@@ -4,24 +4,8 @@ import axios from 'axios';
 
 const Base_URL = 'https://portfolio-js.b.goit.study/api';
 
-
-    const BtnNext = document.querySelector('.btn-arrow-right');
-    const BtnPrev = document.querySelector('.btn-arrow-left');
-
-export async function getReviews() {
-    try {
-        const response = await axios (`${Base_URL}/reviews`);
-        const reviews = response.data;
-        renderReviews(reviews);
-
-        let swiper = new Swiper('.reviews-swiper-container.swiper-container', {
-        direction: 'horizontal',
-            keyboard: { enabled: true, onlyInViewport: true },
-            touch: true,
-            navigation: {
-                nextEl: '.btn-arrow-right',
-                prevEl: '.btn-arrow-left'},
-        });
+const BtnNext = document.querySelector('.btn-arrow-right');
+        const BtnPrev = document.querySelector('.btn-arrow-left');
         
         BtnNext.addEventListener('click', function () {
             swiper.slideNext();
@@ -39,22 +23,49 @@ export async function getReviews() {
             BtnNext.disabled = false;
             BtnPrev.disabled = false;
         });
+
+
+async function getReviews() {
+    try {
+        const response = await axios (`${Base_URL}/reviews`);
+        const reviews = response.data;
+        renderReviews(reviews);
+
+    let swiper = new Swiper('.reviews-swiper-container', {
+        direction: 'horizontal',
         
+            keyboard: { enabled: true, onlyInViewport: true },
+        touch: true,
+        
+            navigation: {
+        nextEl: '.btn-arrow-right',
+        prevEl: '.btn-arrow-left',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+        }
+    });
+  
     } catch (error) {
         alert('An error occurred while getting reviews');
         document.querySelector('.swiper-wrapper').innerHTML = '<p>Not found</p>';
     }
 }
 
-async function renderReviews(reviews) {
+function renderReviews(reviews) {
     const reviewsList = reviews.map(review =>
-        `<div class="reviews-card">
+     `<ul class="reviews-list">
         <li class="swiper-slide">
-        <img src="${review.avatar_url}" alt="${review.author}">
-        <h3>${review.author}</h3>
-        <p>${review.review}</p>
-        </li>
-        </div>`).join('');
+        <div class="reviews-card">
+        
+        <img src="${review.avatar_url}" alt="${review.author}" class="photo">
+        <h3 class="reviews-person-name">${review.author}</h3>
+        <p class="reviews-person-info">${review.review}</p
+       
+        </div>
+         </li>
+     </ul>`).join('');
     
     document.querySelector('.swiper-wrapper').innerHTML = reviewsList;
 }
