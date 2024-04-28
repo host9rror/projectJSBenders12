@@ -1,3 +1,33 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.wrapper-title-img {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .wrapper-title-img {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (min-width: 1439.98px) {
+  .wrapper-title-img {
+    display: flex;
+    row-gap: 16px;
+    margin-bottom: 96px;
+  }
+}
+
 .wrapper-about-title {
   padding: 32px;
   padding-bottom: 0;
@@ -5,6 +35,22 @@
   min-height: 500px;
   background-color: #242527;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .wrapper-about-title {
+    padding: 64px;
+    min-height: 700px;
+  }
+}
+
+@media screen and (min-width: 1439.98px) {
+  .wrapper-about-title {
+    width: 680px;
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+  }
 }
 
 .about h3 {
@@ -17,6 +63,13 @@
   color: #fafafa;
 }
 
+@media screen and (min-width: 767.98px) {
+  .about h3 {
+    font-size: 38px;
+    line-height: 1.05263;
+  }
+}
+
 .title-red {
   color: #ed3b44;
 }
@@ -26,8 +79,21 @@
 
 .wrapper-about-img {
   min-height: 500px;
-  margin-bottom: 32px;
 }
+
+@media screen and (min-width: 1439.98px) {
+  .wrapper-about-img {
+    width: 680px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+/* --------------------experience------------------------- */
 
 .experience {
 }
@@ -37,12 +103,25 @@
 
 .experience-item {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  padding-bottom: 20px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .experience-item {
+    padding-bottom: 32px;
+  }
 }
 
 .experience-item.role,
 .experience-item.education {
   padding-top: 20px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .experience-item.role,
+  .experience-item.education {
+    padding-top: 32px;
+  }
 }
 
 .experience-item.role p,
@@ -58,8 +137,13 @@
 .wrapper-item-top {
   display: flex;
   justify-content: space-between;
-  min-height: 48px;
 }
+
+/* @media screen and (min-width: 767.98px) {
+  .wrapper-item-top {
+    margin-bottom: 8px;
+  }
+} */
 
 .experience h4 {
   font-weight: 600;
@@ -79,12 +163,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  fill: #fafafa;
 }
 
-.slider-arrow:nth-child(1){
-    transform: rotate(180deg);
+@media screen and (min-width: 767.98px) {
+  .button-experience {
+    width: 40px;
+    height: 40px;
+  }
+}
+.wrapper-text {
+  margin-top: 12px;
 }
 
+@media screen and (min-width: 767.98px) {
+  .wrapper-text {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 1439.98px) {
+  .wrapper-text {
+    width: 612px;
+    padding-right: 68px;
+    margin-left: auto;
+  }
+}
+
+/* .slider-arrow:nth-child(1) {
+  transform: rotate(180deg);
+} */
 
 .about-me-desc {
   font-weight: 500;
@@ -95,14 +203,49 @@
   margin-bottom: 32px;
 }
 
+@media screen and (min-width: 767.98px) {
+  .about-me-desc {
+    margin-bottom: 16px;
+  }
+}
+
+/* -----------------skills----------------------- */
+
 .skills {
-  position: relative;
   padding-top: 32px;
+  /* position: relative; */
+}
+
+@media screen and (min-width: 767.98px) {
+  .skills {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 1439.98px) {
+  .skills {
+    padding: 96px 32px 0;
+  }
+}
+
+.wrapper-for-arrow {
+  position: relative;
 }
 
 .wrapper-skills-list {
   width: 260px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 767.98px) {
+  .wrapper-skills-list {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1439.98px) {
+  .wrapper-skills-list {
+    width: 1200px;
+  }
 }
 
 .skills-list {
@@ -125,18 +268,36 @@
   color: #fafafa;
 }
 
+@media screen and (min-width: 767.98px) {
+  .skills-item {
+    height: 200px;
+    width: 200px;
+  }
+}
+
 .skills-item:first-child {
   background-color: #ed3b44;
 }
 
-.hiden {
-  display: none;
-}
-
 .button-skills-arrow {
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
+
   padding: 0;
+
   background-color: transparent;
+  border: none;
+  transform: translateY(-50%);
+}
+
+.skills-arrow {
+  fill: #3b3b3b;
+}
+
+@media screen and (min-width: 767.98px) {
+  .skills-arrow {
+    width: 40px;
+    height: 40px;
+  }
 }
