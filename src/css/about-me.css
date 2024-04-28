@@ -1,5 +1,13 @@
-.wrapper-title-img {
+  .wrapper-title-img {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 767.98px) {
+  .wrapper-title-img {
+    margin-bottom: 64px;
+  }
 }
+
 @media screen and (min-width: 1439.98px) {
   .wrapper-title-img {
     display: flex;
@@ -59,7 +67,6 @@
 
 .wrapper-about-img {
   min-height: 500px;
-  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1439.98px) {
@@ -96,6 +103,13 @@ img {
 .experience-item.role,
 .experience-item.education {
   padding-top: 20px;
+}
+
+@media screen and (min-width: 767.98px) {
+  .experience-item.role,
+  .experience-item.education {
+    padding-top: 32px;
+  }
 }
 
 .experience-item.role p,
@@ -148,6 +162,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1439.98px) {
+  .wrapper-text {
+    width: 612px;
+    padding-right: 68px;
+    margin-left: auto;
+  }
+}
+
 /* .slider-arrow:nth-child(1) {
   transform: rotate(180deg);
 } */
@@ -167,15 +189,26 @@ img {
   }
 }
 
+/* -----------------skills----------------------- */
+
 .skills {
-  position: relative;
   padding-top: 32px;
+  /* position: relative; */
 }
 
 @media screen and (min-width: 767.98px) {
   .skills {
     padding-top: 64px;
   }
+}
+@media screen and (min-width: 1439.98px) {
+  .skills {
+    padding: 96px 32px 0;
+  }
+}
+
+.wrapper-for-arrow {
+  position: relative;
 }
 
 .wrapper-skills-list {
@@ -186,6 +219,12 @@ img {
 @media screen and (min-width: 767.98px) {
   .wrapper-skills-list {
     width: 600px;
+  }
+}
+
+@media screen and (min-width: 1439.98px) {
+  .wrapper-skills-list {
+    width: 1200px;
   }
 }
 
@@ -220,25 +259,25 @@ img {
   background-color: #ed3b44;
 }
 
-.hiden {
-  display: none;
-}
-
 .button-skills-arrow {
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
+
   padding: 0;
+
   background-color: transparent;
   border: none;
-}
-
-@media screen and (min-width: 767.98px) {
-  .button-skills-arrow {
-    height: 40px;
-    width: 40px;
-  }
+  transform: translateY(-50%);
 }
 
 .skills-arrow {
+  fill: #3b3b3b;
+}
+
+@media screen and (min-width: 767.98px) {
+  .skills-arrow {
+    width: 40px;
+    height: 40px;
+  }
 }
