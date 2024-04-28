@@ -16,12 +16,3 @@ accordionHeaders.forEach(header => {
     svg.classList.toggle('rotate-180');
   });
 });
-
-
-// const accordions = document.querySelectorAll('.faq-list');
-//   accordions.forEach((accordion) => {
-//     new Accordion(accordion, {
-//       duration: 400,
-//       showMultiple: false
-//     });
-//   });
