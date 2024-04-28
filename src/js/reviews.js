@@ -46,15 +46,21 @@ export async function getReviews() {
     }
 }
 
-async function renderReviews(reviews) {
+function renderReviews(reviews) {
     const reviewsList = reviews.map(review =>
-        `<div class="reviews-card">
+     `<div class="swiper-wrapper">
+     <ul class="reviews-list">
         <li class="swiper-slide">
-        <img src="${review.avatar_url}" alt="${review.author}">
-        <h3>${review.author}</h3>
-        <p>${review.review}</p>
-        </li>
-        </div>`).join('');
+        <div class="reviews-card">
+        
+        <img src="${review.avatar_url}" alt="${review.author}" class="photo">
+        <h3 class="reviews-person-name">${review.author}</h3>
+        <p class="reviews-person-info">${review.review}</p
+       
+        </div>
+         </li>
+     </ul>
+     </div>`).join('');
     
     document.querySelector('.swiper-wrapper').innerHTML = reviewsList;
 }
