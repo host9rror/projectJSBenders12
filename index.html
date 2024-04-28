@@ -30,64 +30,76 @@
   <body>
     <header>
       <div class="header">
-    <div class="container header-container">
-        <nav class="header-navigation">
-            <a href="./index.html" class="header-logo">
-                <img src="../img/header/logo.png" srcset="../img/header/logo.png 1x, ../img/header/logo@2x.png 2x"
-                    alt="">
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <a href="./index.html" class="header-logo">
+        <img
+          src="/projectJavaBenders12/assets/logo-5b9c5640.png"
+          srcset="/projectJavaBenders12/assets/logo-5b9c5640.png 1x, /projectJavaBenders12/assets/logo@2x-7a550cf3.png 2x"
+          alt=""
+        />
 
-                <span>jefferson*</span>
-            </a>
+        <span>jefferson*</span>
+      </a>
 
-            <span class="menu-text">Menu</span>
+      <span class="menu-text">Menu</span>
 
-            <ul class="header-menu ">
-                <li><a href="/">About me</a></li>
-                <li><a href="/">Benefits</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">FAQ</a></li>
-            </ul>
+      <ul class="header-menu">
+        <li><a href="/">About me</a></li>
+        <li><a href="/">Benefits</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="/">FAQ</a></li>
+      </ul>
 
-            <a href="/" class="order-btn">Order the project</a>
+      <a href="/" class="order-btn">Order the project</a>
+    </nav>
+    <button
+      class="menu-open_btn"
+      type="button"
+      id="menu-open_btn"
+      title="Button for open mobile menu"
+    >
+      <svg class="menu-open_icon" width="32" height="32">
+        <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-burger-menu"></use>
+      </svg>
+    </button>
+  </div>
 
-        </nav>
-        <button class="menu-open_btn" type="button" id="menu-open_btn" title="Button for open mobile menu">
-            <svg class="menu-open_icon" width="32" height="32">
-                <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-burger-menu"></use>
-            </svg>
-        </button>
+  <!-- Mobile Menu -->
 
-    </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <button
+      type="button"
+      class="close-btn"
+      id="close-mobile-menu"
+      name="Close mobile menu"
+    >
+      <svg class="close-btn-img" width="32" height="32">
+        <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-mobile-menu-close"></use>
+      </svg>
+    </button>
 
-    <!-- Mobile Menu -->
+    <nav class="mobile-navigation">
+      <ul class="mobile-header-menu">
+        <li class="mobile-header-menu-item">
+          <a class="mobile-header-menu-link" href="./index.html">About me</a>
+        </li>
+        <li class="mobile-header-menu-item">
+          <a class="mobile-header-menu-link" href="/">Benefits</a>
+        </li>
+        <li class="mobile-header-menu-item">
+          <a class="mobile-header-menu-link" href="/">Projects</a>
+        </li>
+        <li class="mobile-header-menu-item">
+          <a class="mobile-header-menu-link" href="/">FAQ</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="mobile-menu" id="mobile-menu">
-        <button type="button" class="close-btn" id="close-mobile-menu" name="Close mobile menu">
-            <svg class="close-btn-img" width="32" height="32">
-                <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-mobile-menu-close"></use>
-            </svg>
-        </button>
-
-        <nav class="mobile-navigation">
-            <ul class="mobile-header-menu">
-                <li class="mobile-header-menu-item">
-                    <a class="mobile-header-menu-link" href="./index.html">About me</a>
-                </li>
-                <li class="mobile-header-menu-item">
-                    <a class="mobile-header-menu-link" href="/">Benefits</a>
-                </li>
-                <li class="mobile-header-menu-item">
-                    <a class="mobile-header-menu-link" href="/">Projects</a>
-                </li>
-                <li class="mobile-header-menu-item">
-                    <a class="mobile-header-menu-link" href="/">FAQ</a>
-                </li>
-            </ul>
-        </nav>
-
-        <a href="/" class="order-btn-mobile">Order the project</a>
-    </div>
+    <a href="/" class="order-btn-mobile">Order the project</a>
+  </div>
 </div>
+
       <section class="hero">
   <div class="container">
     <h1 class="hero-title">Hello. I’m Fullstack developer Lloyd Jefferson.</h1>
@@ -130,27 +142,18 @@
         <picture>
           <source
             media="(min-width: 1439.98px)"
-            srcset="
-              ../img/about-me/desc/loyd-photo.png    1x,
-              ../img/about-me/desc/loyd-photo@2x.png 2x
-            "
+            srcset="/projectJavaBenders12/assets/loyd-photo-397f36be.png 1x, /projectJavaBenders12/assets/loyd-photo@2x-afab557d.png 2x"
           />
           <source
             media="(min-width: 767.98px)"
-            srcset="
-              ../img/about-me/tablet/loyd-photo.png    1x,
-              ../img/about-me/tablet/loyd-photo@2x.png 2x
-            "
+            srcset="/projectJavaBenders12/assets/loyd-photo-59ba4341.png 1x, /projectJavaBenders12/assets/loyd-photo@2x-86ff18a3.png 2x"
           />
           <source
             media="(max-width: 374.98px)"
-            srcset="
-              ../img/about-me/mobile/loyd-photo.png    1x,
-              ../img/about-me/mobile/loyd-photo@2x.png 2x
-            "
+            srcset="/projectJavaBenders12/assets/loyd-photo-755ca6c1.png 1x, /projectJavaBenders12/assets/loyd-photo@2x-e4bbcce0.png 2x"
           />
           <img
-            src="../img/about-me/mobile/loyd-photo.png"
+            src="/projectJavaBenders12/assets/loyd-photo-755ca6c1.png"
             alt="Lloyd Jefferson"
             width="343"
             height="500"
@@ -168,8 +171,8 @@
               type="button"
               aria-label="Slider button"
             >
-              <svg class="slider-arrow rotate-180"  width="10" height="10">
-                <use href="../img/icons.svg#icon-arrow-down"></use>
+              <svg class="slider-arrow rotate-180" width="10" height="10">
+                <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
               </svg>
             </button>
           </div>
@@ -206,7 +209,7 @@
               aria-label="Slider button"
             >
               <svg class="slider-arrow" width="10" height="10">
-                <use href="../img/icons.svg#icon-arrow-down"></use>
+                <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
               </svg>
             </button>
           </div>
@@ -225,7 +228,7 @@
               aria-label="Slider button "
             >
               <svg class="slider-arrow" width="10" height="10">
-                <use href="../img/icons.svg#icon-arrow-down"></use>
+                <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
               </svg>
             </button>
           </div>
@@ -244,24 +247,24 @@
       </ul>
     </div>
     <div class="skills">
-      <div class="wrapper-for-arrow ">
+      <div class="wrapper-for-arrow">
         <div class="wrapper-skills-list">
-          <ul class="skills-list ">
-            <li class="skills-item ">HTML/CSS</li>
-            <li class="skills-item ">JavaScript</li>
-            <li class="skills-item ">Node. js</li>
-            <li class="skills-item ">React Native</li>
-            <li class="skills-item ">Soft skills</li>
-            <li class="skills-item ">React</li>
+          <ul class="skills-list">
+            <li class="skills-item">HTML/CSS</li>
+            <li class="skills-item">JavaScript</li>
+            <li class="skills-item">Node. js</li>
+            <li class="skills-item">React Native</li>
+            <li class="skills-item">Soft skills</li>
+            <li class="skills-item">React</li>
           </ul>
         </div>
         <button
-          class="button-skills-arrow "
+          class="button-skills-arrow"
           type="button"
           aria-label="Slider button "
         >
           <svg class="skills-arrow" width="28" height="28">
-            <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
+            <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
       </div>
@@ -367,7 +370,7 @@
           
           <button type="button" class="accordion-btn">
             <svg width="20" height="20">
-              <use href="../img/icons.svg#icon-arrow-down"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </button>
@@ -381,7 +384,7 @@
           
           <button type="button" class="accordion-btn">
             <svg width="20" height="20">
-              <use href="../img/icons.svg#icon-arrow-down"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </button>
@@ -396,7 +399,7 @@
           
           <button type="button" class="accordion-btn">
             <svg width="20" height="20">
-              <use href="../img/icons.svg#icon-arrow-down"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </button>
@@ -411,7 +414,7 @@
           
           <button type="button" class="accordion-btn">
             <svg width="20" height="20">
-              <use href="../img/icons.svg#icon-arrow-down"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </button>
@@ -426,7 +429,7 @@
           
           <button type="button" class="accordion-btn">
             <svg width="20" height="20">
-              <use href="../img/icons.svg#icon-arrow-down"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </button>
@@ -439,7 +442,7 @@
           <button type="button" class="ac-trigger heading">What does the process of developing a software product look like from idea to implementation? 
           <button type="button" class="accordion-btn">
             <svg width="20" height="20">
-              <use href="../img/icons.svg#icon-arrow-down"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </button>
@@ -563,13 +566,13 @@
         <ul class="reviews-btn-list">
           <button type="button" class="btn-arrow-left">
             <svg class="arrow-left-icon" width="32" height="32">
-              <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-narrow-right"></use>
             </svg>
           </button>
 
           <button type="button" class="btn-arrow-right">
             <svg class="arrow-right-icon" width="32" height="32">
-              <use href="../img/icons.svg#icon-arrow-narrow-right"></use>
+              <use href="/projectJavaBenders12/assets/icons-72cfc451.svg#icon-arrow-narrow-right"></use>
             </svg>
           </button>
         </ul>
@@ -593,26 +596,23 @@
         <div class="footer-logo">
           <picture class="footer-img">
             <source
-              srcset="../img/work-together/lloyd-logo.png  
-                    ../img/work-together/lloyd-logo@2x.png"
+              srcset="/projectJavaBenders12/assets/lloyd-logo-77865919.png ./img/work-together/lloyd-logo@2x.png"
               media="(min-width: 1440px) "
               type="image/png"
             />
             <source
-              srcset="../img/work-together/lloyd-logo.png  
-                    ../img/work-together/lloyd-logo@2x.png"
+              srcset="/projectJavaBenders12/assets/lloyd-logo-77865919.png ./img/work-together/lloyd-logo@2x.png"
               media="(min-width: 768px) "
               type="image/png"
             />
             <source
-              srcset="../img/work-together/lloyd-logo.png  
-                    ../img/work-together/lloyd-logo@2x.png"
+              srcset="/projectJavaBenders12/assets/lloyd-logo-77865919.png ./img/work-together/lloyd-logo@2x.png"
               media="(min-width:320px)"
               type="image/png"
             />
             <img
               class="footer-img"
-              src="../img/work-together/lloyd-logo.png "
+              src="./img/work-together/lloyd-logo.png "
               alt="img"
               loading="lazy"
             />
