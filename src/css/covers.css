@@ -37,6 +37,14 @@
 
 .covers-projects {
   list-style: none;
+  position: relative;
+  width: 100%;
+
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  rotate: 16deg;
 }
 .cover-item {
   flex-shrink: 0;
@@ -58,13 +66,17 @@
   object-fit: cover;
 }
 
+.row {
+  top: -120%;
+}
+
 @keyframes marqueeLine {
   from {
-    transform: translateX(-20%);
+    transform: translateX(-10%);
   }
 
   to {
-    transform: translateX(-180%);
+    transform: translateX(-30%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -74,19 +86,9 @@
   .covers {
     height: 960px;
   }
-}
 
-.row {
-  position: relative;
-  width: 100%;
-  left: -10%;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  rotate: 16deg;
-}
-.covers-rows {
-  position: absolute;
-  top: -15%;
+  .cover-item {
+    position: relative;
+    top: -120px;
+  }
 }
