@@ -5,7 +5,7 @@ const headerMenu = document.querySelector('.header-menu');
 const headerMenuOpenBtn = document.querySelector('.menu-text');
 const letsWorkTogetherBtn = document.querySelector('.order-btn');
 
-const scrollToElement (elementId, duration) => {
+const scrollToElement = (elementId, duration) => {
   const newId = elementId.substring(1);
   const element = document.getElementById(newId);
 
