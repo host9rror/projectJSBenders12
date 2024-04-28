@@ -1,14 +1,16 @@
-import Swiper from "swiper";
+import Swiper from 'swiper';
 import axios from 'axios';
 
+
 const Base_URL = 'https://portfolio-js.b.goit.study/api';
+
 
     const BtnNext = document.querySelector('.btn-arrow-right');
     const BtnPrev = document.querySelector('.btn-arrow-left');
 
-async function getReviews() {
+export async function getReviews() {
     try {
-        const response = await axios.get(`${Base_URL}/reviews`);
+        const response = await axios (`${Base_URL}/reviews`);
         const reviews = response.data;
         renderReviews(reviews);
 
@@ -44,9 +46,9 @@ async function getReviews() {
     }
 }
 
-function renderReviews(reviews) {
+async function renderReviews(reviews) {
     const reviewsList = reviews.map(review =>
-        `<div class="review">
+        `<div class="reviews-card">
         <li class="swiper-slide">
         <img src="${Base_URL}/${review.avatar_url}" alt="${review.author}">
         <h3>${review.author}</h3>
