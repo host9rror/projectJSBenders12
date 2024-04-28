@@ -1,20 +1,3 @@
-// import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   const accordion = new Accordion('.faq-list', {
-//     duration: 300,
-//     beforeToggle: function(toggleElement, panel) {
-//       const svg = toggleElement.querySelector('svg');
-//       if (panel.classList.contains('is-visible')) {
-//         svg.classList.remove('rotate-180');
-//       } else {
-//         svg.classList.add('rotate-180');
-//       }
-//     }
-//   });
-// });
-
 const accordionHeaders = document.querySelectorAll('.ac-header');
 
 accordionHeaders.forEach(header => {
@@ -24,6 +7,21 @@ accordionHeaders.forEach(header => {
 
     panel.classList.toggle('is-hidden');
 
+    if (panel.classList.contains('is-hidden')) {
+      panel.style.maxHeight = null; 
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px'; 
+    }
+
     svg.classList.toggle('rotate-180');
   });
 });
+
+
+// const accordions = document.querySelectorAll('.faq-list');
+//   accordions.forEach((accordion) => {
+//     new Accordion(accordion, {
+//       duration: 400,
+//       showMultiple: false
+//     });
+//   });
