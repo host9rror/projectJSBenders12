@@ -1,46 +1,18 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//   const triggers = document.querySelectorAll('.ac-trigger, .accordion-btn');
+const accordionHeaders = document.querySelectorAll('.ac-header');
 
-//   triggers.forEach(trigger => {
-//     trigger.addEventListener('click', function() {
-//       const content = this.parentElement.nextElementSibling; // Find the next sibling of the parent element
-//       content.classList.toggle('is-hidden');
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const panel = header.nextElementSibling.querySelector('.faq-content'); 
+    const svg = header.querySelector('svg'); 
 
-//       const svg = this.parentElement.querySelector('svg'); // Find the SVG within the clicked element's parent container
-      
-//       if (content.classList.contains('is-hidden')) {
-//         // If the content is hidden, add the rotate-180 class to the SVG
-//         svg.classList.remove('rotate-180');
-//       } else {
-//         // If the content is visible, remove the rotate-180 class from the SVG
-//         svg.classList.add('rotate-180');
-//       }
-//     });
-//   });
-// });
+    panel.classList.toggle('is-hidden');
 
-
-import Accordion from 'accordion-js';
-
-document.addEventListener('DOMContentLoaded', function() {
-  const accordion = new Accordion('.faq-accordion-container', {
-    open: false,
-    collapsible: true,
-    multiple: false,
-    event: 'click',
-   selector: {
-      trigger: '.ac-trigger',
-      content: '.faq-content'
-    },
-    callback: {
-      open: function(event) {
-        const svg = event.target.closest('.faq-heading').querySelector('svg');
-        svg.classList.add('rotate-180');
-      },
-      close: function(event) {
-        const svg = event.target.closest('.faq-heading').querySelector('svg');
-        svg.classList.remove('rotate-180');
-      }
+    if (panel.classList.contains('is-hidden')) {
+      panel.style.maxHeight = null; 
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px'; 
     }
+
+    svg.classList.toggle('rotate-180');
   });
 });

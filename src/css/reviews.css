@@ -34,7 +34,13 @@
 }
 .reviews-item {
 }
-.reviews-card {
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .reviews-card {
+    float: left;
+  }
+
 }
 .photo {
   border-radius: 10px;

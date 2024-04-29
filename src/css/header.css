@@ -12,19 +12,21 @@
 
 .header-navigation {
     display: flex;
-
 }
 
 .header-logo {
     display: flex;
     column-gap: 8px;
+    z-index: 10;
 }
 
-.header-menu {
+.header-menu,
+.menu-text,
+.order-btn {
     display: none;
 }
 
-/* Mobile Menu */
+/*! Mobile Menu */
 
 .menu-open_btn {
     display: flex;
@@ -40,6 +42,192 @@
     height: 28px;
 }
 
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: linear-gradient(270deg, #1c1d20 49.68%, #69292d 67.73%, #ed3b44 100%);
+    background-image: url('../img//header//menu-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(-100%);
+    transition: transform 250ms;
+}
+
+.close-btn {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.close-btn-img {
+    fill: #fafafa;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close-btn-img,
+.close-btn:focus .close-btn-img {
+    fill: #ffffff;
+}
+
+.mobile-navigation {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: 300px;
+}
+
+.mobile-header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.mobile-header-menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
+    transition: color 0.3s ease-in-out;
+}
+
+.mobile-current,
+.mobile-header-menu-link:active,
+.mobile-header-menu-link:focus,
+.mobile-header-menu-link:hover {
+    color: #ed3b44;
+}
+
+.order-btn-mobile {
+    display: flex;
+    max-width: 164px;
+    height: 45px;
+    border-radius: 60px;
+    background-color: #ed3b44;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 31px;
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.is-mobile-menu-open {
+    transform: translateX(0%);
+}
+
+/*! Mobile Menu END */
+
 .menu-open_icon {
     stroke: #fff;
+}
+
+.background {
+    display: none;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+}
+
+.background-visible {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-open_btn {
+        display: none;
+    }
+
+    .header-navigation {
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu-text,
+    .order-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 10;
+
+    }
+
+    .menu-text {
+        position: relative;
+        height: 39px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 6px;
+            width: 100%;
+            height: 1px;
+            background-color: #fafafa;
+        }
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        top: 45px;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .order-btn {
+        display: flex;
+        min-width: 163px;
+        padding: 18px 24px;
+        height: 55px;
+        border-radius: 60px;
+        background-color: #ed3b44;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: #fafafa;
+    }
+}
+
+
+
+
+.header-menu_visible {
+    display: flex;
 }
