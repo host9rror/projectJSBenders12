@@ -57,6 +57,14 @@ function renderReviews(startIndex) {
   } else {
     BtnPrev.disabled = false;
   }
+  // для стилізації всіх слайдів, щоб не вилазили
+  const swiperSlides = document.querySelectorAll('.swiper-slide');
+  swiperSlides.forEach(slide => {
+    slide.style.display = 'inline-block'; 
+    slide.style.overflow = 'hidden';
+    slide.style.whiteSpace = 'normal'; 
+  });
+  // 
 }
 
 async function initSwiper() {
@@ -75,10 +83,6 @@ async function initSwiper() {
       nextEl: '.btn-arrow-right',
       prevEl: '.btn-arrow-left',
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    }
   });
 
   const BtnNext = document.querySelector('.btn-arrow-right');
@@ -90,6 +94,7 @@ async function initSwiper() {
       currentIndex += 1;
       renderReviews(currentIndex);
       swiper.update();
+      swiper.updateSize();
       swiper.slideNext();
     }
   });
@@ -99,6 +104,7 @@ async function initSwiper() {
       currentIndex -= 1;
       renderReviews(currentIndex);
       swiper.update();
+      swiper.updateSize();
       swiper.slidePrev();
     }
   });
