@@ -17,6 +17,7 @@
 .header-logo {
     display: flex;
     column-gap: 8px;
+    z-index: 10;
 }
 
 .header-menu,
@@ -148,7 +149,20 @@
     stroke: #fff;
 }
 
+.background {
+    display: none;
+    position: absolute;
+    top: -32px;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+}
 
+.background-visible {
+    display: block;
+}
 
 @media screen and (min-width: 768px) {
     .menu-open_btn {
@@ -167,6 +181,8 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        z-index: 10;
+
     }
 
     .menu-text {
@@ -192,6 +208,7 @@
         left: 50%;
         top: 45px;
         transform: translateX(-50%);
+        z-index: 10;
     }
 
     .order-btn {
