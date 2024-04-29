@@ -40,7 +40,7 @@ function renderReviews(startIndex) {
       </li>
     </ul>`).join('');
 
-  document.querySelector('.swiper-wrapper').innerHTML = reviewsList;
+  document.querySelector('.reviews-wrapper').innerHTML = reviewsList;
 
 
   const BtnNext = document.querySelector('.btn-arrow-right');
@@ -58,12 +58,12 @@ function renderReviews(startIndex) {
     BtnPrev.disabled = false;
   }
   // для стилізації всіх слайдів, щоб не вилазили
-  const swiperSlides = document.querySelectorAll('.swiper-slide');
-  swiperSlides.forEach(slide => {
-    slide.style.display = 'inline-block'; 
-    slide.style.overflow = 'hidden';
-    slide.style.whiteSpace = 'normal'; 
-  });
+  // const swiperSlides = document.querySelectorAll('.swiper-slide');
+  // swiperSlides.forEach(slide => {
+  //   slide.style.display = 'inline-block'; 
+  //   slide.style.overflow = 'hidden';
+  //   slide.style.whiteSpace = 'normal'; 
+  // });
   // 
 }
 
