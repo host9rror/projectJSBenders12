@@ -128,7 +128,6 @@
 /* Desktop */
 @media screen and (min-width: 1440px) {
   .reviews-card {
-    width: 332px;
     float: left;
   }
 }
