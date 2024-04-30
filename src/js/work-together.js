@@ -2,19 +2,14 @@ import { formToJSON } from 'axios';
 import post from './api';
 
 const refs = {
-  footerInput: document.querySelector('.footer-input-email'),
-  footerComment: document.querySelector('.footer-input-comment'),
   footerForm: document.querySelector('.footer-form'),
   footerResponceHeader: document.querySelector('.footer-modal-header'),
   footerResponceParagr: document.querySelector('.footer-modal-p'),
   footerBtnClose: document.querySelector('.footer-close-btn'),
   footerBackdrop: document.querySelector('.backdrop'),
-  
 };
 
 const {
-  footerInput,
-  footerComment,
   footerForm,
   footerResponceHeader,
   footerResponceParagr,
@@ -28,10 +23,22 @@ footerForm.addEventListener('submit', e => {
     e.target.elements.email.value,
     e.target.elements.comment.value
   );
-  footerBtnClose.addEventListener('click', toggleBackdrop);
-  footerBackdrop.addEventListener('click', toggleBackdrop);
-  
+  listeners();
 });
+
+function listeners() {
+  window.addEventListener('keydown', e => {
+    if (e.code === 'Escape') {
+      toggleBackdrop();
+    }
+  });
+  footerBackdrop.addEventListener('click', e => {
+    if (e.target === footerBackdrop) {
+      toggleBackdrop();
+    }
+  });
+  footerBtnClose.addEventListener('click', toggleBackdrop);
+}
 
 async function renderBackdrop(email, comment) {
   const input = email.trim();
