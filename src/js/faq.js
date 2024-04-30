@@ -1,18 +1,28 @@
-const accordionHeaders = document.querySelectorAll('.ac-header');
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionHeaders = document.querySelectorAll('.ac-header');
 
-accordionHeaders.forEach(header => {
-  header.addEventListener('click', () => {
-    const panel = header.nextElementSibling.querySelector('.faq-content'); 
-    const svg = header.querySelector('svg'); 
+  accordionHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+          const panel = header.nextElementSibling;
 
-    panel.classList.toggle('is-hidden');
+          if (panel) {
+              const content = panel.querySelector('.faq-content');
+              const svg = header.querySelector('svg');
 
-    if (panel.classList.contains('is-hidden')) {
-      panel.style.maxHeight = null; 
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 'px'; 
-    }
+              if (content) {
+                  content.classList.toggle('is-hidden');
 
-    svg.classList.toggle('rotate-180');
+                  if (content.classList.contains('is-hidden')) {
+                      content.style.maxHeight = null;
+                  } else {
+                      content.style.maxHeight = content.scrollHeight + 'px';
+                  }
+              }
+
+              if (svg) {
+                  svg.classList.toggle('rotate-180');
+              }
+          }
+      });
   });
 });
