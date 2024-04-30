@@ -179,11 +179,6 @@
 }
 
 @media screen and (max-width: 1440px) {
-  .swiper-wrapper {
-    gap: 16px;
-  }
-}
-@media screen and (max-width: 1440px) {
   .reviews-card {
     width: 284px;
     height: auto;

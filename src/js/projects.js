@@ -1,44 +1,36 @@
-// import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.css';
+import Swiper from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-document.addEventListener('DOMContentLoaded', function () {
+
   const swiper = new Swiper('.project', {
-  loop: true,
-  direction: 'horizontal',
-  allowSlideNext: true,
-  setWrapperSize: true,
-  modules: [Navigation, Keyboard, Mousewheel],
-  simulateTouch: true,
-  grabCursor: true,
-  spaceBetween: 0,
-  speed: 1000,
-  navigation: {
-    nextEl: '.about-swiper-button-next',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 2,
+    loop: true,
+    slidesPerGroup: 1,
+    direction: 'horizontal',
+    allowSlideNext: true,
+    setWrapperSize: true,
+    modules: [Swiper.Navigation, Swiper.Keyboard, Swiper.Mousewheel],
+    simulateTouch: true,
+    grabCursor: true,
+    spaceBetween: 0,
+    speed: 1000,
+    navigation: {
+      nextEl: '.project-arrow-next',
+      prevEl: '.project-arrow-prev',
     },
-    375: {
-      slidesPerView: 2,
+    slidesPerView: 1,
+    keyboard: {
+      enabled: true,
     },
-    768: {
-      slidesPerView: 3,
+    mousewheel: {
+      invert: true,
     },
-    1440: {
-      slidesPerView: 6,
-    },
-  },
-  keyboard: {
-    enabled: true,
-  },
-  mousewheel: {
-    invert: true,
-  },
-});
+  });
 
-  const nextButton = document.querySelector('.arrow-right');
-  const prevButton = document.querySelector('.arrow-left');
+  const nextButton = document.querySelector('.project-arrow-next');
+  const prevButton = document.querySelector('.project-arrow-prev');
 
   nextButton.addEventListener('click', () => {
     swiper.slideNext();
@@ -60,4 +52,4 @@ document.addEventListener('DOMContentLoaded', function () {
   swiper.on('slideChange', () => {
     hideInactiveSlideContent(swiper);
   });
-});
+
