@@ -1,77 +1,38 @@
 .hero {
   padding: 281px 0 32px;
-  background: linear-gradient(
-    90deg,
-    #ed3b44 0%,
-    #ed3b44 11%,
-    #993036 13%,
-    #993036 24%,
-    #69292d 26%,
-    #69292d 37%,
-    #262023 39%,
-    #262023 50%,
-    #1c1d20 52%,
-    #1c1d20 100%
-  );
+  background-repeat: repeat-y;
+  background-position: 0% 0%;
+  background-image: url('../img/hero/bg_mobile.png');
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/hero/bg_mobile@2x.png');
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background: linear-gradient(
-      90deg,
-      #bf363d 0%,
-      #bf363d 7%,
-      #ac3339 8%,
-      #ac3339 15%,
-      #993036 16%,
-      #993036 23%,
-      #862d32 24%,
-      #862d32 31%,
-      #742b30 32%,
-      #742b30 39%,
-      #69292d 40%,
-      #69292d 47%,
-      #4e2629 48%,
-      #4e2629 55%,
-      #3a2226 56%,
-      #3a2226 63%,
-      #262023 64%,
-      #262023 71%,
-      #1c1d20 72%,
-      #1c1d20 100%
-    );
+    padding-top: 300px;
+    background-image: url('../img/hero/bg_tablet.png');
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-    background: linear-gradient(
-      90deg,
-      #ed3b44 0%,
-      #ed3b44 5%,
-      #d13840 6%,
-      #d13840 11%,
-      #bf363d 12%,
-      #bf363d 17%,
-      #ac3339 18%,
-      #ac3339 23%,
-      #993036 24%,
-      #993036 29%,
-      #862d32 30%,
-      #862d32 35%,
-      #742b30 36%,
-      #742b30 41%,
-      #69292d 42%,
-      #69292d 47%,
-      #4e2629 48%,
-      #4e2629 53%,
-      #3a2226 54%,
-      #3a2226 59%,
-      #262023 60%,
-      #262023 65%,
-      #1c1d20 66%,
-      #1c1d20 100%
-    );
+    background-image: url('../img/hero/bg_tablet@2x.png');
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-image: url('../img/hero/bg_desktop.png');
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url('../img/hero/bg_desktop@2x.png');
   }
 }
 
@@ -91,9 +52,10 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .hero-title {
-    margin-bottom: 243px;
+    width: 1084px;
+    margin: 0 auto 243px;
   }
 }
 
