@@ -49,7 +49,7 @@ async function renderBackdrop(email, comment) {
     toggleBackdrop();
     footerForm.reset();
   } catch (error) {
-    alert('Заповніть форму коректно');
+    
     console.log(error);
   }
 }
