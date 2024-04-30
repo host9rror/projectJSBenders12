@@ -1,11 +1,11 @@
 {
-  "name": "projectJavaBenders12",
+  "name": "projectJSBenders12",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/projectJavaBenders12/",
+    "build": "vite build --base=/projectJSBenders12/",
     "preview": "vite preview"
   },
   "devDependencies": {
