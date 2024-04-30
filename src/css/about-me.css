@@ -232,7 +232,7 @@ img {
   position: relative;
 }
 
-.wrapper-skills-list {
+/* .wrapper-skills-list {
   width: 260px;
   overflow: hidden;
 }
@@ -251,9 +251,9 @@ img {
 
 .skills-list {
   display: inline-flex;
-}
+} */
 
-.skills-item {
+/* .skills-item {
   height: 130px;
   width: 130px;
   display: flex;
@@ -301,4 +301,4 @@ img {
     width: 40px;
     height: 40px;
   }
-}
+} */
