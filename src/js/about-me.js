@@ -3,7 +3,7 @@ import 'accordion-js/dist/accordion.min.css';
 
 
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,11 +14,11 @@ import 'swiper/css/navigation';
 
 // ------Accordion--------
 
-new Accordion('.accordion-container', {
-  onOpen: function () {
-    console.log('ok');
-  },
-});
+// new Accordion('.accordion-container', {
+//   onOpen: function () {
+//     console.log('ok');
+//   },
+// });
 
 
 
@@ -26,11 +26,37 @@ new Accordion('.accordion-container', {
 
 
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  modules: [Navigation],
+new Swiper('.about-swiper', {
+  loop: true,
+  direction: 'horizontal',
+  allowSlideNext: true,
+  setWrapperSize: true,
+  modules: [Navigation, Keyboard, Mousewheel],
+  simulateTouch: true,
+  grabCursor: true,
+  spaceBetween: 0,
+  speed: 1000,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.skills-swiper-button',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    375: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 6,
+    },
+  },
+  keyboard: {
+    enabled: true,
+  },
+  mousewheel: {
+    invert: true,
   },
 });
