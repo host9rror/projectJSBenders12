@@ -120,7 +120,7 @@
 /*  MOBILE */
 @media screen and (min-width: 320px) {
   .reviews-item {
-    height: 302px;
+    min-height: 302px;
   }
 }
 
