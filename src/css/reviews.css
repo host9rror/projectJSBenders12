@@ -16,25 +16,25 @@
 .swiper-container {
 }
 .reviews-wrapper {
-}
-.swiper-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 24px;
   margin-bottom: 64px;
 }
+.swiper-wrapper {
+}
 .reviews-list {
 }
 .swiper-slide {
+}
+.reviews-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
-}
-.reviews-item {
 }
 
 .photo {

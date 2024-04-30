@@ -40,7 +40,7 @@ function renderReviews(startIndex) {
       </li>
     </ul>`).join('');
 
-  document.querySelector('.reviews-wrapper').innerHTML = reviewsList;
+  document.querySelector('.reviews-wrapper.swiper-wrapper').innerHTML = reviewsList;
 
 
   const BtnNext = document.querySelector('.btn-arrow-right');
@@ -94,7 +94,7 @@ async function initSwiper() {
       currentIndex += 1;
       renderReviews(currentIndex);
       swiper.update();
-      swiper.updateSize();
+      // swiper.updateSize();
       swiper.slideNext();
     }
   });
@@ -104,7 +104,7 @@ async function initSwiper() {
       currentIndex -= 1;
       renderReviews(currentIndex);
       swiper.update();
-      swiper.updateSize();
+      // swiper.updateSize();
       swiper.slidePrev();
     }
   });
