@@ -4,6 +4,8 @@
 }
 .container {
 }
+.reviews {
+}
 .reviews-title {
   font-weight: 600;
   color: rgba(250, 250, 250, 0.4);
@@ -16,25 +18,28 @@
 .swiper-container {
 }
 .reviews-wrapper {
-}
-.swiper-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 24px;
   margin-bottom: 64px;
 }
+.swiper-wrapper {
+}
 .reviews-list {
 }
 .swiper-slide {
+}
+.reviews-card {
+  padding-bottom: 32px;
+}
+.reviews-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
-}
-.reviews-item {
 }
 
 .photo {
@@ -57,7 +62,7 @@
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
   text-align: left;
-  margin-bottom: 20px;
+  overflow: auto;
 }
 .reviews-button {
   display: flex;
@@ -98,7 +103,13 @@
   background-color: rgba(250, 250, 250, 0.2);
   border-color: rgba(250, 250, 250, 0.8);
 }
-
+.disabled {
+  color: #3b3b3b;
+  background-color: #3b3b3b;
+}
+.hidden {
+  display: none;
+}
 /*  MOBILE */
 @media screen and (min-width: 320px) {
 }
@@ -109,12 +120,14 @@
 }
 @media screen and (min-width: 320px) {
   .reviews-card {
-    width: 295px;
+    /* width: 295px; */
+    width: 100%;
   }
 }
 @media screen and (min-width: 320px) {
   .div-reviews-info {
-    width: 295px;
+    /* width: 295px; */
+    width: 100%;
     height: 158px;
   }
 }

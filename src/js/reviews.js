@@ -40,7 +40,7 @@ function renderReviews(startIndex) {
       </li>
     </ul>`).join('');
 
-  document.querySelector('.reviews-wrapper').innerHTML = reviewsList;
+  document.querySelector('.reviews-wrapper.swiper-wrapper').innerHTML = reviewsList;
 
 
   const BtnNext = document.querySelector('.btn-arrow-right');
@@ -65,6 +65,13 @@ function renderReviews(startIndex) {
   //   slide.style.whiteSpace = 'normal'; 
   // });
   // 
+
+const cards = document.querySelectorAll('.reviews-item');
+  cards.forEach(function(card) {
+    if (card.offsetWidth > window.innerWidth) {
+      card.classList.add('.hidden');
+    }
+  });
 }
 
 async function initSwiper() {
@@ -94,7 +101,7 @@ async function initSwiper() {
       currentIndex += 1;
       renderReviews(currentIndex);
       swiper.update();
-      swiper.updateSize();
+      // swiper.updateSize();
       swiper.slideNext();
     }
   });
@@ -104,7 +111,7 @@ async function initSwiper() {
       currentIndex -= 1;
       renderReviews(currentIndex);
       swiper.update();
-      swiper.updateSize();
+      // swiper.updateSize();
       swiper.slidePrev();
     }
   });
