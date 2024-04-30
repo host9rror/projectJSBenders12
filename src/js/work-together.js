@@ -9,6 +9,7 @@ const refs = {
   footerResponceParagr: document.querySelector('.footer-modal-p'),
   footerBtnClose: document.querySelector('.footer-close-btn'),
   footerBackdrop: document.querySelector('.backdrop'),
+  
 };
 
 const {
@@ -28,6 +29,8 @@ footerForm.addEventListener('submit', e => {
     e.target.elements.comment.value
   );
   footerBtnClose.addEventListener('click', toggleBackdrop);
+  footerBackdrop.addEventListener('click', toggleBackdrop);
+  
 });
 
 async function renderBackdrop(email, comment) {
