@@ -45,16 +45,24 @@ async function renderBackdrop(email, comment) {
   const message = comment.trim();
   try {
     const resp = await post({ input, message });
+    console.log(resp);
+    if (typeof resp === `string`) {
+      footerResponceParagr.textContent = resp;
+      toggleBackdrop();
+      return;
+    }
     addHTML(resp);
     toggleBackdrop();
     footerForm.reset();
   } catch (error) {
-    alert('Заповніть форму коректно');
     console.log(error);
   }
 }
 
 function addHTML({ title, message }) {
+  if (!message) {
+    footerResponceParagr.textContent = `${message}`;
+  }
   footerResponceHeader.textContent = `${title}`;
   footerResponceParagr.textContent = `${message}`;
 }

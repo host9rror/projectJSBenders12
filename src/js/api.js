@@ -10,6 +10,7 @@ export default async function post({ input, message }) {
     });
     return resp.data;
   } catch (error) {
-    console.log(error);
+    // console.log(error.response.data.message);
+    return error.response.data.message;
   }
 }
