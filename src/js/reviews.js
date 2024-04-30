@@ -65,6 +65,13 @@ function renderReviews(startIndex) {
   //   slide.style.whiteSpace = 'normal'; 
   // });
   // 
+
+const cards = document.querySelectorAll('.reviews-item');
+  cards.forEach(function(card) {
+    if (card.offsetWidth > window.innerWidth) {
+      card.classList.add('.hidden');
+    }
+  });
 }
 
 async function initSwiper() {
