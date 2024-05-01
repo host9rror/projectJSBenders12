@@ -211,7 +211,7 @@ img {
 
 /* -----------------skills----------------------- */
 
-.swiper-container {
+.skills-container {
   padding-top: 32px;
   /* position: relative; */
   display: flex;
@@ -220,13 +220,13 @@ img {
 }
 
 @media screen and (min-width: 767.98px) {
-  .swiper-container {
+  .skills-container {
     padding-top: 64px;
   }
 }
 
 @media screen and (min-width: 1439.98px) {
-  .swiper-container {
+  .skills-container {
     padding: 96px 32px 0;
   }
 }
