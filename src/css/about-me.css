@@ -304,5 +304,6 @@ img {
 
 
 .swiper-slide-active {
-  background-color: #ed3b44;
+  background-color: transparent;
+  /* background-color: #ed3b44; */
 }
