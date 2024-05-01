@@ -141,7 +141,33 @@
         }
 
  @media screen and (min-width: 1440px){
-    
+
+.project-content{
+width: 100%;
+display: flex;
+flex-wrap: nowrap;
+}
+
+
+.project-main-part{
+    border-radius: 24px 0 0 24px;
+    width: 50%;
+}
+
+.project-content-title{
+    margin-top: 132px;
+}
+
+.project-content-btn{
+    margin-top: 32px;
+}
+
+
+    .project-box{
+    border-radius: 0 24px 24px 0;
+    width: 50%;
+    }
+
  }
 
 
