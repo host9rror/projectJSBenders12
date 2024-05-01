@@ -24,6 +24,11 @@
 .menu-text,
 .order-btn {
   display: none;
+  transition: box-shadow 1s;
+}
+
+.order-btn:hover {
+  box-shadow: 2px 4px 40px -14px rgba(255, 0, 0, 1);
 }
 
 /*! Mobile Menu */

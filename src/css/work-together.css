@@ -109,10 +109,20 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   margin-bottom: 64px;
+  transition: all 0.5s;
 }
 
 .footer-btn:hover {
-  background-color: #e0373f;
+  background-color: #ec323c;
+  box-shadow: 0 0 20px #862626;
+  transform: scale(1.1);
+}
+
+.footer-btn:active {
+  background-color: #ec323c;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 .footer-contact-links {
@@ -131,6 +141,11 @@
   letter-spacing: -0.02em;
   color: #fafafa;
   margin-bottom: 32px;
+  transition: all 0.5s;
+}
+
+.footer-contact-btn:hover {
+  border-color: #fff;
 }
 
 .label-form {
