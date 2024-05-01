@@ -1,8 +1,8 @@
 .project {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content:center;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .project-title {
