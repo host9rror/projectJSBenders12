@@ -1,10 +1,7 @@
 import Accordion from 'accordion-js';
-
-
-
+import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
-// import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
