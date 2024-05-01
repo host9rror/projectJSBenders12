@@ -7,7 +7,10 @@ import 'swiper/css/navigation';
 
 // ------Accordion--------
 
-new Accordion('.accordion-container');
+new Accordion('.accordion-container', {
+  showMultiple: true,
+  openOnInit: [0],
+});
 
 
 // ------Swiper--------
