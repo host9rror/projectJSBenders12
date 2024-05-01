@@ -24,9 +24,9 @@
     />
     <title>Portfolio</title>
     <script type="module" crossorigin src="/projectJSBenders12/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/projectJSBenders12/assets/vendor-855b2709.js">
-    <link rel="stylesheet" href="/projectJSBenders12/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/projectJSBenders12/assets/index-bc7c7744.css">
+    <link rel="modulepreload" crossorigin href="/projectJSBenders12/assets/vendor-67234e59.js">
+    <link rel="stylesheet" href="/projectJSBenders12/assets/vendor-2aba1e47.css">
+    <link rel="stylesheet" href="/projectJSBenders12/assets/index-82562ab7.css">
   </head>
   <body>
     <header>
@@ -165,24 +165,10 @@
       </div>
       <div class="wrapper-about-img">
         <picture>
-          <source
-            media="(min-width: 1439.98px)"
-            srcset="/projectJSBenders12/assets/loyd-photo-397f36be.png 1x, /projectJSBenders12/assets/loyd-photo@2x-afab557d.png 2x"
-          />
-          <source
-            media="(min-width: 767.98px)"
-            srcset="/projectJSBenders12/assets/loyd-photo-59ba4341.png 1x, /projectJSBenders12/assets/loyd-photo@2x-86ff18a3.png 2x"
-          />
-          <source
-            media="(max-width: 374.98px)"
-            srcset="/projectJSBenders12/assets/loyd-photo-755ca6c1.png 1x, /projectJSBenders12/assets/loyd-photo@2x-e4bbcce0.png 2x"
-          />
-          <img
-            src="/projectJSBenders12/assets/loyd-photo-755ca6c1.png"
-            alt="Lloyd Jefferson"
-            width="343"
-            height="500"
-          />
+          <source media="(min-width: 1439.98px)" srcset="/projectJSBenders12/assets/loyd-photo-397f36be.png 1x, /projectJSBenders12/assets/loyd-photo@2x-afab557d.png 2x" />
+          <source media="(min-width: 767.98px)" srcset="/projectJSBenders12/assets/loyd-photo-59ba4341.png 1x, /projectJSBenders12/assets/loyd-photo@2x-86ff18a3.png 2x" />
+          <source media="(max-width: 374.98px)" srcset="/projectJSBenders12/assets/loyd-photo-755ca6c1.png 1x, /projectJSBenders12/assets/loyd-photo@2x-e4bbcce0.png 2x" />
+          <img src="/projectJSBenders12/assets/loyd-photo-755ca6c1.png" alt="Lloyd Jefferson" width="343" height="500" />
         </picture>
       </div>
     </div>
@@ -190,16 +176,15 @@
       <ul class="experience-list accordion-container">
         <li class="experience-item about-me ac">
           <div class="wrapper-item-top ac-header">
-            <h4>About me</h4>
-            <button
-              class="button-experience ac-trigger"
-              type="button"
-              aria-label="Slider button"
-            >
-              <svg class="slider-arrow" width="10" height="10">
-                <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
-              </svg>
-            </button>
+            <div class="ac-trigger buttons-block">
+              <h4>About me</h4>
+              <button class="button-experience" type="button" aria-label="Slider button">
+                <svg class="slider-arrow" width="10" height="10">
+                  <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+            </div>
+
           </div>
           <div class="wrapper-text ac-panel">
             <p class="about-me-desc">
@@ -227,16 +212,15 @@
         </li>
         <li class="experience-item role ac">
           <div class="wrapper-item-top ac-header">
-            <h4>Role</h4>
-            <button
-              class="button-experience ac-trigger"
-              type="button"
-              aria-label="Slider button"
-            >
-              <svg class="slider-arrow" width="10" height="10">
-                <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
-              </svg>
-            </button>
+            <div class="ac-trigger buttons-block">
+              <h4>Role</h4>
+              <button class="button-experience" type="button" aria-label="Slider button">
+                <svg class="slider-arrow" width="10" height="10">
+                  <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+            </div>
+
           </div>
           <div class="wrapper-text ac-panel">
             <p>Frontend development</p>
@@ -246,18 +230,17 @@
         </li>
         <li class="experience-item education ac">
           <div class="wrapper-item-top ac-header">
-            <h4>Education</h4>
-            <button
-              class="button-experience ac-trigger"
-              type="button"
-              aria-label="Slider button "
-            >
-              <svg class="slider-arrow" width="10" height="10">
-                <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
-              </svg>
-            </button>
+            <div class="ac-trigger buttons-block">
+              <h4>Education</h4>
+              <button class="button-experience" type="button" aria-label="Slider button ">
+                <svg class="slider-arrow" width="10" height="10">
+                  <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+            </div>
+
           </div>
-          <div class="wrapper-text ac-panel is-hidden">
+          <div class="wrapper-text ac-panel">
             <p>
               2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
               York
@@ -271,8 +254,10 @@
         </li>
       </ul>
     </div>
+
+
     <div class="skills">
-    <div class="skills-container swiper-container">
+      <div class="skills-container swiper-container">
         <div class="about-swiper">
           <ul class="skills-list swiper-wrapper">
             <li class="skills-item swiper-slide">
@@ -303,10 +288,9 @@
             <use href="/projectJSBenders12/assets/icons-72cfc451.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
+      </div>
     </div>
-  </div>
 </section>
-
       <section id="benefits" class="section">
   <div class="container">
     <h2 class="benefits-title">Benefits of working with me</h2>
