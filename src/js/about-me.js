@@ -1,5 +1,5 @@
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+
 
 
 import Swiper from 'swiper';
@@ -8,23 +8,12 @@ import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
-
-// -----------------------------------------------------------------------------------------------------
-
 // ------Accordion--------
 
-// new Accordion('.accordion-container', {
-//   onOpen: function () {
-//     console.log('ok');
-//   },
-// });
-
+new Accordion('.accordion-container');
 
 
 // ------Swiper--------
-
-
 
 new Swiper('.about-swiper', {
   loop: true,
