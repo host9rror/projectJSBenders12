@@ -213,7 +213,6 @@ img {
 
 .skills-container {
   padding-top: 32px;
-  /* position: relative; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -256,7 +255,7 @@ img {
   gap: 0px !important;
 }
 
-.swiper-wrapper .swiper-slide {
+/* .swiper-wrapper .swiper-slide {
   height: 130px;
   width: 130px !important;
   display: flex;
@@ -277,7 +276,7 @@ img {
     height: 200px;
     width: 200px !important;
   }
-}
+} */
 
 .skills-item:first-child {
   background-color: #ed3b44;
