@@ -23,7 +23,6 @@
 
     .project-main-part {
         background-color: rgba(250, 250, 250, 1);
-        /* width: calc((343px - 16px * 1) / 2); */
         margin-right: auto;
         display: flex;
         flex-wrap:wrap;
@@ -40,13 +39,6 @@
     margin: 0;
     display: flex; 
     gap: 6px;
-}
-
-.project-swiper-slide{
-
-}
-.project-left{
-   
 }
 
     .project-list {
@@ -125,3 +117,34 @@
         width: 24px;
         height: 24px;
     }
+
+        @media screen and (min-width: 768px) {
+        
+
+            .project-main-part {
+                    gap: 64px;
+                }
+
+        .project-content-title{
+            font-size: 44px;
+            line-height: 1;
+            width: 494px;
+            height: 132px;
+            margin-top: 32px;
+        }
+
+            .project-box-image {
+                padding: 120px 45px;
+                }
+        
+
+        }
+
+ @media screen and (min-width: 1440px){
+    
+ }
+
+
+
+
+

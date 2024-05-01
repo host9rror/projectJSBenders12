@@ -53,3 +53,4 @@ import 'swiper/css/pagination';
     hideInactiveSlideContent(swiper);
   });
 
+  
