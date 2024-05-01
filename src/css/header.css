@@ -172,7 +172,6 @@
     .header-navigation {
         width: 100%;
         justify-content: space-between;
-        position: relative;
     }
 
     .menu-text,
@@ -224,8 +223,6 @@
         color: #fafafa;
     }
 }
-
-
 
 
 .header-menu_visible {
