@@ -37,8 +37,11 @@
 }
 .reviews-card {
   padding-bottom: 32px;
+  overflow: hidden;
 }
 .reviews-item {
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -70,6 +73,8 @@
   color: rgba(250, 250, 250, 0.6);
   text-align: left;
   overflow: auto;
+  overflow-y: auto;
+  max-height: 100%;
 }
 .reviews-button {
   display: flex;
