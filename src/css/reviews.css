@@ -176,8 +176,7 @@
   }
 }
 
-/* DESKTOP (от 768px до 1279px) */
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .reviews-item:nth-child(n + 3) {
     display: none;
   }
