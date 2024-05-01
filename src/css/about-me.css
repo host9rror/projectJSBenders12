@@ -278,9 +278,9 @@ img {
   }
 } 
 
-.skills-item:first-child {
+/* .skills-item:first-child {
   background-color: #ed3b44;
-}
+} */
 
 .skills-item p {
   font-family: 'Inter Tight', sans-serif;
@@ -312,4 +312,9 @@ img {
     width: 40px;
     height: 40px;
   }
+}
+
+
+.swiper-slide-active {
+  background-color: #ed3b44;
 }
