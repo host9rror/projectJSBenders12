@@ -25,6 +25,7 @@ new Swiper('.about-swiper', {
   grabCursor: true,
   spaceBetween: 0,
   speed: 1000,
+  slideActiveClass: 'about-swiper-slide-active',
   navigation: {
     nextEl: '.skills-swiper-button',
   },
