@@ -10,16 +10,16 @@ const swiper = new Swiper('.project', {
   direction: 'horizontal',
   allowSlideNext: true,
   setWrapperSize: true,
-  modules: [Swiper.Navigation, Swiper.Keyboard, Swiper.Mousewheel],
+  modules: [Navigation, Keyboard, Mousewheel],
   simulateTouch: true,
   grabCursor: true,
+  slidesPerView: 1,
   spaceBetween: 0,
   speed: 1000,
   navigation: {
     nextEl: '.project-arrow-next',
     prevEl: '.project-arrow-prev',
   },
-  slidesPerView: 1,
   keyboard: {
     enabled: true,
   },
