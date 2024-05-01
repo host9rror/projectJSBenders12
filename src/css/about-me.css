@@ -188,7 +188,7 @@ img {
 
 @media screen and (min-width: 1439.98px) {
   .wrapper-text {
-    /* width: 680px; */
+    width: 680px;
     padding-right: 68px;
     margin-left: auto;
   }
