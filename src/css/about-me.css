@@ -95,22 +95,31 @@ img {
 
 /* --------------------experience------------------------- */
 
-
 .experience-item {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2)!important;
-  border-left: none!important;
-  border-right: none!important;
-  border-top: none!important;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2) !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  padding-top: 20px;
   padding-bottom: 32px;
-  background-color: transparent!important;
+  background-color: transparent !important;
+  margin: 0 !important;
 }
 
-@media screen and (min-width: 767.98px) {
+.experience-item:first-child{
+  padding-top: 0;
+}
+
+/* @media screen and (min-width: 767.98px) {
   .experience-item {
     padding-bottom: 32px;
   }
+} */
+@media screen and (min-width: 767.98px) {
+  .experience-item {
+  padding-top: 32px;
+  }
 }
-
 
 .experience-item.role p,
 .experience-item.education p {
@@ -131,6 +140,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: transparent;
+  padding: 0;
 }
 
 .experience h4 {
@@ -243,7 +254,7 @@ img {
   gap: 0px !important;
 }
 
- .skills-container .skills-item {
+.skills-container .skills-item {
   height: 130px;
   width: 130px !important;
   display: flex;
@@ -264,7 +275,7 @@ img {
     height: 200px;
     width: 200px !important;
   }
-} 
+}
 
 /* .skills-item:first-child {
   background-color: #ed3b44;
@@ -301,7 +312,6 @@ img {
     height: 40px;
   }
 }
-
 
 .swiper-slide-active {
   background-color: #ed3b44;
